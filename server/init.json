@@ -18,6 +18,12 @@
     "content": "你好，银河系!"
   },
   {
+    "type": "Article",
+    "title": "Hello hah",
+    "date": "2015/9/20",
+    "content": "hahhah!"
+  },
+  {
     "type": "Link",
     "name": "GITHUB",
     "href": "https://www.github.com"

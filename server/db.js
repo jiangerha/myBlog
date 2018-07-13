@@ -25,8 +25,8 @@ const Models = {
   initialized: false
 }
 
-const initialize = function () {
-  Models.User.find(null, function (err, doc) {
+const initialize = () => {
+  Models.User.find({}, (err, doc) => {
     if (err) {
       console.log(err)
     } else if (!doc.length) {
@@ -40,7 +40,7 @@ const initialize = function () {
   })
 }
 
-mongoose.connect('mongodb://127.0.0.1/test')
+mongoose.connect('mongodb://127.0.0.1/myBlog')
 // mongoose.set('debug', true)
 
 const db = mongoose.connection
